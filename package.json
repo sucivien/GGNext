@@ -1,0 +1,20 @@
+{
+  "name": "memscan-core-engine",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --input-type=commonjs -e \"require('http').createServer((_,r)=>{r.writeHead(200,{'Content-Type':'text/html;charset=utf-8'});r.end('<!doctype html><html><head><title>GGNext v0.10.0</title></head><body style=font-family:sans-serif;padding:24px;background:#161215;color:#f2e8ec><h2>GGNext v0.10.0</h2><p>Android Native Project (Kotlin + Jetpack Compose + C++20 NDK)</p></body></html>')}).listen(3000,'0.0.0.0',()=>console.log('Dev server running on http://0.0.0.0:3000'))\" --",
+    "build": "echo 'Android Gradle project - no web build needed'",
+    "preview": "npm run dev"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
